@@ -1,3 +1,6 @@
+""" This a basic Flask server(REST API handler) which handler the requests coming to this server. It receives the data and sent a JSON response """
+
+
 from flask import Flask, request,jsonify
 
 app = Flask(__name__)

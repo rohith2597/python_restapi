@@ -1,3 +1,8 @@
+"""This is a basic REST API handler using FLask which receives bytes and convert it to the image using Pillow(Python library) 
+and then we can save or process the image according to the requirement and a simple JSON response is sent back to the client. 
+You can test it using Postman(Tool for testing API).
+"""
+
 from flask import Flask, request,jsonify
 from PIL import Image
 import io
@@ -11,10 +16,8 @@ def upload_file():
         print(type(image))
         print(image)
         img=Image.open(io.BytesIO(image))
-        print(type(img))
         img.save("test_v1.jpg")
         response=True
-              
         response_body = {
             "response":response,    
         }

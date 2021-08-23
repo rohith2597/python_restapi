@@ -1,4 +1,4 @@
-""" This a basic Flask server(REST API handler) which handler the requests coming to this server. It receives the data and sent a JSON response """
+""" This a basic Flask server(REST API handler) which handler the requests coming to this server. It receives the data and send JSON response """
 
 
 from flask import Flask, request,jsonify
